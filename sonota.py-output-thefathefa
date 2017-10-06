@@ -1,0 +1,615 @@
+root@Surface4:~# ls
+SonOTA  SonOTA.old
+root@Surface4:~# cd SonOTA
+root@Surface4:~/SonOTA# ls
+LICENSE  README.md  requirements.txt  sonota.py  ssl  static
+root@Surface4:~/SonOTA# ./sonota.py
+Select IP address of the WiFi interface:
+    0: 192.168.101.112
+    1: 169.254.56.245
+    2: 169.254.72.143
+    3: 169.254.178.203
+Select IP address [0]: 0
+WiFi SSID: thessid
+WiFi Password: thepassword
+
+Using the following configuration:
+        Server IP Address: 192.168.101.112
+        WiFi SSID: thessid
+        WiFi Password: thepassword
+** Now connect via WiFi to your Sonoff device.
+** Please change into the ITEAD WiFi network (ITEAD-100001XXXX). The default password is 12345678.
+To reset the Sonoff to defaults, press the button for 7 seconds and the light will start flashing rapidly.
+** This application should be kept running and will wait until connected to the Sonoff...
+...............................~~ Connection attempt
+>> HTTP GET /10.10.7.1/device
+<< {
+    "accept": "post",
+    "apikey": "55e5b6d8-ba95-46ec-b11d-1483d02af8b8",
+    "deviceid": "10000b86fd"
+}
+>> HTTP POST /10.10.7.1/ap
+>> %s {
+    "serverName": "192.168.101.112",
+    "version": 4,
+    "ssid": "thessid",
+    "port": 8443,
+    "password": "thepassword"
+}
+<< {
+    "error": 0
+}
+~~ Provisioning completed
+Starting stage2...
+~~ Starting web server (HTTP port: 8080, HTTPS port 8443)
+~~ Waiting for device to connect
+
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+..........
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+..........
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+......^C2017-10-06 11:37:46,369 (INFO) Quitting.
+root@Surface4:~/SonOTA# ./sonota.py
+Select IP address of the WiFi interface:
+    0: 192.168.101.106
+    1: 192.168.101.112
+    2: 169.254.56.245
+    3: 169.254.178.203
+Select IP address [0]: 0
+WiFi SSID: thessid
+WiFi Password: thepassword
+
+Using the following configuration:
+        Server IP Address: 192.168.101.106
+        WiFi SSID: thessid
+        WiFi Password: thepassword
+** Now connect via WiFi to your Sonoff device.
+** Please change into the ITEAD WiFi network (ITEAD-100001XXXX). The default password is 12345678.
+To reset the Sonoff to defaults, press the button for 7 seconds and the light will start flashing rapidly.
+** This application should be kept running and will wait until connected to the Sonoff...
+.....................~~ Connection attempt
+>> HTTP GET /10.10.7.1/device
+<< {
+    "accept": "post",
+    "apikey": "55e5b6d8-ba95-46ec-b11d-1483d02af8b8",
+    "deviceid": "10000b86fd"
+}
+>> HTTP POST /10.10.7.1/ap
+>> %s {
+    "password": "thepassword",
+    "ssid": "thessid",
+    "port": 8443,
+    "serverName": "192.168.101.106",
+    "version": 4
+}
+<< {
+    "error": 0
+}
+~~ Provisioning completed
+Starting stage2...
+** The IP address of <serve_host> (192.168.101.106) is not  assigned to any interface on this machine.
+** Please change WiFi network to thessid and make sure 192.168.101.106 is being assigned to your WiFi interface.
+** This application should be kept running and will wait until connected to the WiFi...
+......~~ Starting web server (HTTP port: 8080, HTTPS port 8443)
+~~ Waiting for device to connect
+
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+..........
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+2017-10-06 11:39:23,860 (WARNING) 404 GET / (192.168.101.114) 3.91ms
+2017-10-06 11:39:23,982 (WARNING) 404 GET /favicon.ico (192.168.101.114) 0.62ms
+.........<< HTTP POST /dispatch/device
+>> /dispatch/device
+>> {
+    "reason": "ok",
+    "error": 0,
+    "IP": "192.168.101.106",
+    "port": 8443
+}
+2017-10-06 11:43:42,659 (INFO) 200 POST /dispatch/device (192.168.101.182) 157605.13ms
+2017-10-06 11:43:42,664 (WARNING) 404 GET / (192.168.101.109) 0.42ms
+2017-10-06 11:43:42,665 (WARNING) 404 GET / (192.168.101.114) 0.36ms
+2017-10-06 11:43:42,777 (WARNING) 404 GET /favicon.ico (192.168.101.109) 1.78ms
+.
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+......^C2017-10-06 11:45:20,932 (INFO) Quitting.
+root@Surface4:~/SonOTA# ./sonota.py
+Select IP address of the WiFi interface:
+    0: 192.168.101.106
+    1: 192.168.101.112
+    2: 169.254.56.245
+    3: 169.254.178.203
+Select IP address [0]: 0
+WiFi SSID: thessid
+WiFi Password: thepassword
+
+Using the following configuration:
+        Server IP Address: 192.168.101.106
+        WiFi SSID: thessid
+        WiFi Password: thepassword
+** Now connect via WiFi to your Sonoff device.
+** Please change into the ITEAD WiFi network (ITEAD-100001XXXX). The default password is 12345678.
+To reset the Sonoff to defaults, press the button for 7 seconds and the light will start flashing rapidly.
+** This application should be kept running and will wait until connected to the Sonoff...
+........................~~ Connection attempt
+>> HTTP GET /10.10.7.1/device
+[Errno 103] Software caused connection abort
+>> HTTP GET /10.10.7.1/device
+[Errno 103] Software caused connection abort
+>> HTTP GET /10.10.7.1/device
+[Errno 11] Resource temporarily unavailable
+>> HTTP GET /10.10.7.1/device
+[Errno 113] No route to host
+
+[snip snip snip - many of the same, hundreeds]
+
+[Errno 113] No route to host
+>> HTTP GET /10.10.7.1/device
+[Errno 103] Software caused connection abort
+>> HTTP GET /10.10.7.1/device
+[Errno 11] Resource temporarily unavailable
+>> HTTP GET /10.10.7.1/device
+[Errno 103] Software caused connection abort
+>> HTTP GET /10.10.7.1/device
+<< {
+    "apikey": "55e5b6d8-ba95-46ec-b11d-1483d02af8b8",
+    "accept": "post",
+    "deviceid": "10000b86fd"
+}
+>> HTTP POST /10.10.7.1/ap
+>> %s {
+    "port": 8443,
+    "ssid": "thessid",
+    "password": "thepassword",
+    "version": 4,
+    "serverName": "192.168.101.106"
+}
+<< {
+    "error": 0
+}
+~~ Provisioning completed
+Starting stage2...
+** The IP address of <serve_host> (192.168.101.106) is not  assigned to any interface on this machine.
+** Please change WiFi network to thessid and make sure 192.168.101.106 is being assigned to your WiFi interface.
+** This application should be kept running and will wait until connected to the WiFi...
+......~~ Starting web server (HTTP port: 8080, HTTPS port 8443)
+~~ Waiting for device to connect
+
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+..2017-10-06 11:48:00,767 (WARNING) 404 GET / (192.168.101.114) 1.07ms
+........
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+........<< HTTP POST /dispatch/device
+>> /dispatch/device
+>> {
+    "error": 0,
+    "IP": "192.168.101.106",
+    "port": 8443,
+    "reason": "ok"
+}
+2017-10-06 11:50:02,810 (INFO) 200 POST /dispatch/device (192.168.101.182) 1907.67ms
+2017-10-06 11:50:03,004 (INFO) 101 GET /api/ws (192.168.101.182) 0.78ms
+2017-10-06 11:50:03,005 (DEBUG) << WEBSOCKET OPEN
+2017-10-06 11:50:03,015 (DEBUG) << WEBSOCKET INPUT
+2017-10-06 11:50:03,016 (DEBUG) << {
+    "apikey": "55e5b6d8-ba95-46ec-b11d-1483d02af8b8",
+    "userAgent": "device",
+    "version": 2,
+    "ts": 982,
+    "model": "PSC-B01-GL",
+    "action": "register",
+    "romVersion": "2.0.4",
+    "deviceid": "10000b86fd"
+}
+~~~ device sent action request,  acknowledging / answering...
+2017-10-06 11:50:03,022 (INFO) We are dealing with a PSC-B01-GL model.
+~~~~ register
+>> {
+    "error": 0,
+    "apikey": "dbbcf003-2976-43db-bcef-e113dcdaae02",
+    "config": {
+        "hbInterval": 145,
+        "hb": 1
+    },
+    "deviceid": "10000b86fd"
+}
+2017-10-06 11:50:03,043 (DEBUG) << WEBSOCKET INPUT
+2017-10-06 11:50:03,044 (DEBUG) << {
+    "apikey": "dbbcf003-2976-43db-bcef-e113dcdaae02",
+    "userAgent": "device",
+    "action": "date",
+    "deviceid": "10000b86fd"
+}
+~~~ device sent action request,  acknowledging / answering...
+~~~~ date
+>> {
+    "error": 0,
+    "apikey": "dbbcf003-2976-43db-bcef-e113dcdaae02",
+    "date": "2017-10-06T11:50:03.052Z",
+    "deviceid": "10000b86fd"
+}
+2017-10-06 11:50:03,065 (DEBUG) << WEBSOCKET INPUT
+2017-10-06 11:50:03,066 (DEBUG) << {
+    "apikey": "dbbcf003-2976-43db-bcef-e113dcdaae02",
+    "userAgent": "device",
+    "action": "update",
+    "params": {
+        "fwVersion": "2.0.4",
+        "switch": "off",
+        "power": "0",
+        "staMac": "5C:CF:7F:B4:53:84",
+        "rssi": -84,
+        "startup": "off"
+    },
+    "deviceid": "10000b86fd"
+}
+~~~ device sent action request,  acknowledging / answering...
+~~~~ update
+>> {
+    "error": 0,
+    "apikey": "dbbcf003-2976-43db-bcef-e113dcdaae02",
+    "deviceid": "10000b86fd"
+}
+>> {
+    "apikey": "dbbcf003-2976-43db-bcef-e113dcdaae02",
+    "userAgent": "app",
+    "params": {
+        "switch": "off"
+    },
+    "from": "hackepeter",
+    "ts": 0,
+    "sequence": "1507283403081",
+    "action": "update",
+    "deviceid": "10000b86fd"
+}
+>> {
+    "apikey": "dbbcf003-2976-43db-bcef-e113dcdaae02",
+    "userAgent": "app",
+    "params": {
+        "switch": "on"
+    },
+    "from": "hackepeter",
+    "ts": 0,
+    "sequence": "1507283403086",
+    "action": "update",
+    "deviceid": "10000b86fd"
+}
+>> {
+    "apikey": "dbbcf003-2976-43db-bcef-e113dcdaae02",
+    "userAgent": "app",
+    "params": {
+        "switch": "off"
+    },
+    "from": "hackepeter",
+    "ts": 0,
+    "sequence": "1507283403098",
+    "action": "update",
+    "deviceid": "10000b86fd"
+}
+>> {
+    "apikey": "dbbcf003-2976-43db-bcef-e113dcdaae02",
+    "userAgent": "app",
+    "params": {
+        "switch": "on"
+    },
+    "from": "hackepeter",
+    "ts": 0,
+    "sequence": "1507283403109",
+    "action": "update",
+    "deviceid": "10000b86fd"
+}
+>> {
+    "apikey": "dbbcf003-2976-43db-bcef-e113dcdaae02",
+    "userAgent": "app",
+    "params": {
+        "switch": "off"
+    },
+    "from": "hackepeter",
+    "ts": 0,
+    "sequence": "1507283403119",
+    "action": "update",
+    "deviceid": "10000b86fd"
+}
+>> {
+    "apikey": "dbbcf003-2976-43db-bcef-e113dcdaae02",
+    "userAgent": "app",
+    "params": {
+        "binList": [
+            {
+                "downloadUrl": "http://192.168.101.106:8080/ota/image_user1-0x01000.bin",
+                "name": "user1.bin",
+                "digest": "97fe70d737390bbde7b8d208c79d590e29fc76962623c7bd198ee210210ea616"
+            },
+            {
+                "downloadUrl": "http://192.168.101.106:8080/ota/image_user2-0x81000.bin",
+                "name": "user2.bin",
+                "digest": "e6d0cbb641542bd0a27e6c4628fc9331f1f5d3ac3afa42c9307569cf4d70fcdc"
+            }
+        ],
+        "model": "PSC-B01-GL",
+        "version": "23.42.5"
+    },
+    "ts": 0,
+    "sequence": "1507283403133",
+    "action": "upgrade",
+    "deviceid": "10000b86fd"
+}
+2017-10-06 11:50:03,148 (DEBUG) << WEBSOCKET INPUT
+2017-10-06 11:50:03,149 (DEBUG) << {
+    "apikey": "dbbcf003-2976-43db-bcef-e113dcdaae02",
+    "userAgent": "device",
+    "action": "query",
+    "params": [
+        "timers",
+        "timeZone"
+    ],
+    "deviceid": "10000b86fd"
+}
+~~~ device sent action request,  acknowledging / answering...
+~~~~ query
+>> {
+    "error": 0,
+    "apikey": "dbbcf003-2976-43db-bcef-e113dcdaae02",
+    "params": 0,
+    "deviceid": "10000b86fd"
+}
+2017-10-06 11:50:03,698 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=68706223&sign=eaadce678807612c91c06e3caa8882b51fc7fad905415924a608bd537497882e (192.168.101.182) 45.72ms
+2017-10-06 11:50:03,800 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1843638549&sign=56d0cc8c9891ef0f4403ea0d2aa259ce32e9824c304821486080a4200f397bfd (192.168.101.182) 4.12ms
+2017-10-06 11:50:03,896 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=212567592&sign=5055199457e9bd426fb0842e819623a65d0351a516df5fd0023a1f9efb18fc30 (192.168.101.182) 1.21ms
+2017-10-06 11:50:03,991 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1883488164&sign=960b1c4a1eb69a2d93f27533d757b21d55f69973e6861bebc747adb608c36377 (192.168.101.182) 3.33ms
+2017-10-06 11:50:04,406 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=964776169&sign=98d891d778c429a268c51484e4995000e7995aaab86a501e2bd220d3ee6d868c (192.168.101.182) 5.47ms
+2017-10-06 11:50:04,503 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=928126551&sign=a1480516915f84cbb1536914200824caa440b24410b776ab728f73323807c70d (192.168.101.182) 4.75ms
+2017-10-06 11:50:04,605 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1301950427&sign=1a33965a4a9b7005149eee1724596f2754230ffbea9bf04f6a0c000417838649 (192.168.101.182) 4.87ms
+2017-10-06 11:50:04,698 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1992516190&sign=f8923b1a9e1622b3b8d5ddeb837c3fd2c7620deea038f50b9e761a61df4c28d7 (192.168.101.182) 4.87ms
+2017-10-06 11:50:04,795 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1426542624&sign=aa0a36eca357fddaa014ddd4f08199239b0005e26023ead315aed274515ae6ba (192.168.101.182) 5.13ms
+.2017-10-06 11:50:04,887 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=849040635&sign=a83bf6d0a798735773089ea2b858cf7145c819738306db8882702b4bc483d298 (192.168.101.182) 2.06ms
+2017-10-06 11:50:04,993 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=941604920&sign=f6eb5504125deebc61125c4e054ad226c28b692805cf90fd05aed7431aeb7192 (192.168.101.182) 2.56ms
+2017-10-06 11:50:05,082 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1400427944&sign=f447379cfee75b7bf85716a56cc0e76844e90ef407e82184fe9fc2f72ac568d9 (192.168.101.182) 1.31ms
+2017-10-06 11:50:05,177 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1994719310&sign=a33e70dddf99d620e40e5279dc643d4ea5f38f95e3717eea7c1b4e523e71fdc8 (192.168.101.182) 5.17ms
+2017-10-06 11:50:05,267 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=2038269862&sign=35c21fd9e21b9e4763fc81d4d29affa24007f0ecdca00c2d4c539e1301c6ea45 (192.168.101.182) 1.39ms
+2017-10-06 11:50:05,361 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=659998484&sign=397832352ea2734c0546c4bb0cedc2bbea48c4559d70a440394c1b11638727d3 (192.168.101.182) 1.30ms
+2017-10-06 11:50:05,453 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1280937363&sign=a9c36d61d03700c89d680e320e9c2f06c4af987f0be644e6dc53db40e4b35d5f (192.168.101.182) 5.59ms
+2017-10-06 11:50:05,546 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1681643301&sign=c620f03457c21c769d3393ff5806762666b1d27320518a761ff544840daca424 (192.168.101.182) 4.90ms
+2017-10-06 11:50:05,645 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=725914710&sign=43db6a5c954286af4c78894368ed3314ad4ac3f1f0f87c3556ee931954441cb1 (192.168.101.182) 2.74ms
+2017-10-06 11:50:05,735 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1729267236&sign=6612ac697f6d0f5143cfc7662b0d44d4f90fe073dd0dd2c53020a6c0d4db1fc5 (192.168.101.182) 2.76ms
+2017-10-06 11:50:05,824 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=2023351876&sign=1dd8ce4d33137b998ebaa6b96fc821cca5ac56f8fd6c01b901a59d1e49e88a5e (192.168.101.182) 2.99ms
+2017-10-06 11:50:05,920 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=142750431&sign=2904988e2306db268ebc35271da9a33f0251286dfa0c98faa9bf97d24b3451f8 (192.168.101.182) 4.79ms
+2017-10-06 11:50:06,012 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1840579929&sign=58a532c452962fdf6b564ebaa43cf04e387831333f4562f3d00be4d1a61f5a72 (192.168.101.182) 1.61ms
+2017-10-06 11:50:06,107 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=2098560397&sign=9063bb2d89f9c33df281e78f82b5eb0345e690aa1fb5301b491fd4bf8c325140 (192.168.101.182) 5.14ms
+2017-10-06 11:50:06,208 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1910500675&sign=66292c98f270f28ab70d98d10b75760386a3775d5655513c291841a528d65bd1 (192.168.101.182) 5.44ms
+2017-10-06 11:50:06,293 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1170970491&sign=1bc526a1eab945f56a9cfb7f4f65d843634781e3cb7076d86f28a8f6e4d7b57b (192.168.101.182) 1.71ms
+2017-10-06 11:50:06,396 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1856224190&sign=708a05db3fb81cb193df06d32ff1c0ef47bf5a4505df0ead8634bf6aea1dc9a5 (192.168.101.182) 4.89ms
+2017-10-06 11:50:06,498 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=983059344&sign=034d9891383b63decd282fab122e9d9d5aab1d2fc206a103a8b2c3f5c52d69b1 (192.168.101.182) 4.80ms
+2017-10-06 11:50:06,589 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1718458134&sign=3c8a08228dbd37b8541c86be3eb6d1eebd2465cb1d72d3b156d19ae45d2bf157 (192.168.101.182) 3.24ms
+2017-10-06 11:50:06,679 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1876268425&sign=e707b546784943c47d209730dfce8631b6512f77de0c3e42ca51607e4bbbf7e5 (192.168.101.182) 1.10ms
+2017-10-06 11:50:06,774 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1764841629&sign=74f0d0ac888f8afe049e3bda609513b6a0e4310c11487a66ae0e4bd9ea3f7db2 (192.168.101.182) 5.13ms
+.
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+2017-10-06 11:50:06,866 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=398844030&sign=79e248009dca6d73d7f9e5dbae0420f0cabd0806eaec9a4f20233a8c0cf9efad (192.168.101.182) 1.26ms
+2017-10-06 11:50:06,962 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=185252727&sign=10c7ce6b255343e794c4b6fb690e9b1cfab57177552ae5f4241ae915ba5a252b (192.168.101.182) 4.78ms
+2017-10-06 11:50:07,062 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1370429126&sign=61648f4e390c05a550570be7f70e5d4179c01e1bb330dc39f9cc143680960976 (192.168.101.182) 4.89ms
+2017-10-06 11:50:07,154 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=502141743&sign=1340fa83286d0717aad98e70c54217280580eb9e61824361acea7eac6a55b195 (192.168.101.182) 2.79ms
+2017-10-06 11:50:07,247 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=993687334&sign=def3765f6b76f54bf4e7311b3699fc73a439b91ba66f83b623824c38c08b97a1 (192.168.101.182) 4.16ms
+2017-10-06 11:50:07,339 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=15934104&sign=bceb580015ff772b7956fbe3162760e00e349b27d1344a1c2dd53571d2f9d901 (192.168.101.182) 4.90ms
+2017-10-06 11:50:07,435 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1363674760&sign=a2b85f6f1af7947e39a15c2163f73a5737cfb723a629fd8ca1e473b1de3d3630 (192.168.101.182) 4.83ms
+2017-10-06 11:50:07,530 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=904629749&sign=5430137012613d02bc02315e581f0c302310e40cd8a6d10f8f1950a17912943b (192.168.101.182) 4.83ms
+2017-10-06 11:50:07,624 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=2047965620&sign=66188ac981efe4af058521c4ace35c0dc4bd9b43aa38155799151743a1f4e5cc (192.168.101.182) 4.33ms
+2017-10-06 11:50:07,717 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=451230256&sign=f085dbf8f70feb0d7096acf848965115efbe265702e19c55a0cf17a90152b5b2 (192.168.101.182) 2.63ms
+2017-10-06 11:50:07,811 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=2084670932&sign=2accb06b2dd647cee2dfc621401f8c1f09101acc7d09d36cb89cf5e6f2320a62 (192.168.101.182) 4.96ms
+2017-10-06 11:50:07,903 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=561035572&sign=2c039a33ba6d51370c74e52085629dde15c9e9e25e693da247bdec40fa756512 (192.168.101.182) 3.74ms
+2017-10-06 11:50:07,993 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1840531613&sign=e57759b07281bfa5e3efa264d9f16d11bb0f2172183d4f3ee4bfdf6a5aec24d4 (192.168.101.182) 1.77ms
+2017-10-06 11:50:08,090 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1248402490&sign=170b1583a685ce6ae16709278251a57f25eab164d67b905f190b5ee00b7c2f74 (192.168.101.182) 4.97ms
+2017-10-06 11:50:08,181 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1518954509&sign=e6c5ade3be2f73cafd634c14d254ec126bb6e4b59dfac52c9ea67ff12c5dd87c (192.168.101.182) 3.46ms
+2017-10-06 11:50:08,277 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=614127119&sign=5062ea7ea9f3ed04aacba16fe549b0f0af0fcc5dc393c85f6ee0d877e3022969 (192.168.101.182) 3.54ms
+2017-10-06 11:50:08,367 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=683337405&sign=8cf92da8208d643011c01cb3f990e5b1bf7e8e4af7a453cd9f154fd1dac8603c (192.168.101.182) 4.91ms
+2017-10-06 11:50:08,464 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1382875695&sign=8ba2522aba728a9bf49fc8e0fbc4650854052db60bbd5d70e25288c8dc21d2cc (192.168.101.182) 2.82ms
+2017-10-06 11:50:08,567 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1843654049&sign=fc5381851e40c5ff6a6c170e8cfd891d3346241db32725d1190ac46f1bc2a5c4 (192.168.101.182) 4.02ms
+2017-10-06 11:50:08,659 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1436430327&sign=51d8d7043753e56373ad059a2e16fe79fbac7ca1d109c1aae4d21f99ec90e551 (192.168.101.182) 4.43ms
+2017-10-06 11:50:08,751 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=951656719&sign=90a328e72d6603e5a60e4941026d83c98345556097c178afddbe5c45c9d4cdfd (192.168.101.182) 5.37ms
+2017-10-06 11:50:08,843 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=120033497&sign=df222dbbfc64eceaf50fd7737050ca033d23860e638d5911c73571dcd5692af2 (192.168.101.182) 2.95ms
+.2017-10-06 11:50:08,933 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1669566824&sign=70c5b708db6e218c40e490f63dcb66232d5833ec28aef2665f79a5aa7e61a89d (192.168.101.182) 2.02ms
+2017-10-06 11:50:09,029 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1277092596&sign=8729be2edb95cf77b65825c17c82114b83e0e682a13f521b98ff2438aead934e (192.168.101.182) 1.06ms
+2017-10-06 11:50:09,118 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=219218649&sign=67b735dbed596224de6c2e9267b9025866105b3eafc3774d6d49cbcfc05b56a5 (192.168.101.182) 4.89ms
+2017-10-06 11:50:09,209 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=643287356&sign=ecb21fcdcf4b757fc0c93f9862f4bfd6640fa0c609e60c682ee02b77e7c30eb7 (192.168.101.182) 3.72ms
+2017-10-06 11:50:09,304 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=2041654184&sign=1acf7f69b60cc449dce0d19e9e3a60b2d184309786d871458b94104357a8e224 (192.168.101.182) 2.75ms
+2017-10-06 11:50:09,398 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=1429623093&sign=2ead8c41c0bd47b4f184ee046a0226cc71a035fe5376e70f382da45336af1c42 (192.168.101.182) 2.03ms
+2017-10-06 11:50:09,497 (INFO) 206 GET /ota/image_user2-0x81000.bin?deviceid=10000b86fd&ts=2035222245&sign=267339641cedd6add9ddd9c3d7f827355be8a955d8efc02cca266250e17e2f26 (192.168.101.182) 5.52ms
+2017-10-06 11:50:09,824 (DEBUG) << WEBSOCKET INPUT
+2017-10-06 11:50:09,826 (DEBUG) << {
+    "error": 0,
+    "apikey": "dbbcf003-2976-43db-bcef-e113dcdaae02",
+    "userAgent": "device",
+    "sequence": "1507283403133",
+    "deviceid": "10000b86fd"
+}
+2017-10-06 11:50:09,844 (DEBUG) ~~~ device acknowledged our action request (seq 1507283403133) with error code 0
+.........
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+..........
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+.........2017-10-06 11:51:06,565 (DEBUG) ~~ websocket close
+.
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+
+
+
+The "FinalStage" SSID will disappear when the device has been fully flashed and image_arduino.bin has been installed
+Once "FinalStage" has gone away, you can stop this program
+
+[snip snip - many of the same]
+
+The "FinalStage" SSID will disappear when the device has been fully flashed and image_arduino.bin has been installed
+Once "FinalStage" has gone away, you can stop this program
+
+
+
+The "FinalStage" SSID will disappear when the device has been fully flashed and image_arduino.bin has been installed
+Once "FinalStage" has gone away, you can stop this program
+^C2017-10-06 11:57:25,468 (INFO) Quitting.
+root@Surface4:~/SonOTA# ./sonota.py --no-prov --serving-host 192.168.101.106
+WiFi SSID: thessid
+WiFi Password: thepassword
+
+Using the following configuration:
+        Server IP Address: 192.168.101.106
+        WiFi SSID: thessid
+        WiFi Password: thepassword
+Starting stage2...
+~~ Starting web server (HTTP port: 8080, HTTPS port 8443)
+~~ Waiting for device to connect
+
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+..........
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+..
+
+
+The "FinalStage" SSID will disappear when the device has been fully flashed and image_arduino.bin has been installed
+Once "FinalStage" has gone away, you can stop this program
+
+[snip snip - many of the same]
+
+The "FinalStage" SSID will disappear when the device has been fully flashed and image_arduino.bin has been installed
+Once "FinalStage" has gone away, you can stop this program
+^C2017-10-06 12:14:37,519 (INFO) Quitting.
+root@Surface4:~/SonOTA#
+root@Surface4:~/SonOTA#
+root@Surface4:~/SonOTA#
+root@Surface4:~/SonOTA# ./sonota.py --no-prov --serving-host 192.168.101.106
+WiFi SSID: thessid
+WiFi Password: thepassword
+
+Using the following configuration:
+        Server IP Address: 192.168.101.106
+        WiFi SSID: thessid
+        WiFi Password: thepassword
+Starting stage2...
+~~ Starting web server (HTTP port: 8080, HTTPS port 8443)
+~~ Waiting for device to connect
+
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+..........
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+...
+
+
+The "FinalStage" SSID will disappear when the device has been fully flashed and image_arduino.bin has been installed
+Once "FinalStage" has gone away, you can stop this program
+
+[snip snip - many of the same]
+
+The "FinalStage" SSID will disappear when the device has been fully flashed and image_arduino.bin has been installed
+Once "FinalStage" has gone away, you can stop this program
+^C2017-10-06 12:49:12,320 (INFO) Quitting.
+root@Surface4:~/SonOTA# ./sonota.py --no-prov --legacy --serving-host 192.168.101.106
+** The IP address of <serve_host> (192.168.101.106) is not  assigned to any interface on this machine.
+** Please change WiFi network to None and make sure 192.168.101.106 is  being assigned to your WiFi interface before connecting to the  Sonoff device.
+2017-10-06 12:49:24,137 (INFO) Quitting.
+root@Surface4:~/SonOTA# ./sonota.py --no-prov --legacy --serving-host 192.168.101.106
+WiFi SSID: thessid
+WiFi Password: thepassword
+
+Using the following configuration:
+        Server IP Address: 192.168.101.106
+        WiFi SSID: thessid
+        WiFi Password: thepassword
+Starting stage2...
+~~ Starting web server (HTTP port: 8080, HTTPS port 443)
+~~ Waiting for device to connect
+
+
+*** IMPORTANT! ***
+** AFTER the first download is COMPLETE, with in a minute or so you should connect to the new SSID "FinalStage" to finish the process.
+** ONLY disconnect when the new "FinalStage" SSID is visible as an available WiFi network.
+This server should automatically be allocated the IP address: 192.168.4.2.
+If you have successfully connected to "FinalStage" and this is not the IP Address you were allocated, please ensure no other device has connected, and reboot your Sonoff.
+.........
+
+[snip snip - many of the same]
+
+The "FinalStage" SSID will disappear when the device has been fully flashed and image_arduino.bin has been installed
+Once "FinalStage" has gone away, you can stop this program
+No longer on "FinalStage" SSID, all done!
+2017-10-06 13:10:29,933 (INFO) Quitting.
+root@Surface4:~/SonOTA#
